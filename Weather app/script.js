@@ -9,7 +9,7 @@ button.addEventListener("click",()=>{
         alert("Please enter a city name");
         return;
     }
-    const url =`https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=87b8502249e686620b7affc0f5e214bd&units=metric`;
+    const url =`https://api.openweathermap.org/data/2.5/weather?q=${value}&appid="Your Api key"&units=metric`;
    
     fetch(url).then((response)=>{
         if(response.ok){
